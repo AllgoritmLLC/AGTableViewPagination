@@ -14,6 +14,8 @@
 		BAAB39CA1A94D3DB00F6E561 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAB39C91A94D3DB00F6E561 /* Images.xcassets */; };
 		BAAB39CD1A94D3DB00F6E561 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAB39CB1A94D3DB00F6E561 /* LaunchScreen.xib */; };
 		BAAB39D91A94D3DB00F6E561 /* AGTableViewPaginationExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB39D81A94D3DB00F6E561 /* AGTableViewPaginationExamplesTests.m */; };
+		BAAB39E71A94D46600F6E561 /* AGTableViewPagination.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB39E41A94D46600F6E561 /* AGTableViewPagination.m */; };
+		BAAB39E81A94D46600F6E561 /* WZProtocolInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB39E61A94D46600F6E561 /* WZProtocolInterceptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		BAAB39D21A94D3DB00F6E561 /* AGTableViewPaginationExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGTableViewPaginationExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAB39D71A94D3DB00F6E561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAB39D81A94D3DB00F6E561 /* AGTableViewPaginationExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGTableViewPaginationExamplesTests.m; sourceTree = "<group>"; };
+		BAAB39E31A94D46600F6E561 /* AGTableViewPagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTableViewPagination.h; sourceTree = "<group>"; };
+		BAAB39E41A94D46600F6E561 /* AGTableViewPagination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTableViewPagination.m; sourceTree = "<group>"; };
+		BAAB39E51A94D46600F6E561 /* WZProtocolInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZProtocolInterceptor.h; sourceTree = "<group>"; };
+		BAAB39E61A94D46600F6E561 /* WZProtocolInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZProtocolInterceptor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		BAAB39B01A94D3DA00F6E561 = {
 			isa = PBXGroup;
 			children = (
+				BAAB39E21A94D45400F6E561 /* AGTableViewPagination */,
 				BAAB39BB1A94D3DA00F6E561 /* AGTableViewPaginationExamples */,
 				BAAB39D51A94D3DB00F6E561 /* AGTableViewPaginationExamplesTests */,
 				BAAB39BA1A94D3DA00F6E561 /* Products */,
@@ -117,6 +124,17 @@
 				BAAB39D71A94D3DB00F6E561 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAAB39E21A94D45400F6E561 /* AGTableViewPagination */ = {
+			isa = PBXGroup;
+			children = (
+				BAAB39E31A94D46600F6E561 /* AGTableViewPagination.h */,
+				BAAB39E41A94D46600F6E561 /* AGTableViewPagination.m */,
+				BAAB39E51A94D46600F6E561 /* WZProtocolInterceptor.h */,
+				BAAB39E61A94D46600F6E561 /* WZProtocolInterceptor.m */,
+			);
+			path = AGTableViewPagination;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +239,9 @@
 			files = (
 				BAAB39C51A94D3DB00F6E561 /* ViewController.m in Sources */,
 				BAAB39C21A94D3DB00F6E561 /* AppDelegate.m in Sources */,
+				BAAB39E81A94D46600F6E561 /* WZProtocolInterceptor.m in Sources */,
 				BAAB39BF1A94D3DA00F6E561 /* main.m in Sources */,
+				BAAB39E71A94D46600F6E561 /* AGTableViewPagination.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +434,7 @@
 				BAAB39DE1A94D3DB00F6E561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAAB39DF1A94D3DB00F6E561 /* Build configuration list for PBXNativeTarget "AGTableViewPaginationExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				BAAB39E11A94D3DB00F6E561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
